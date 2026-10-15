@@ -214,6 +214,7 @@ h3 {
   background: var(--screen); transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 .work-thumb svg { width: 28%; height: auto; }
+.work-thumb video { display: block; width: 100%; height: 100%; object-fit: contain; background: var(--screen); }
 a.work-item:hover .work-thumb { transform: translate(-3px, -3px); box-shadow: 6px 6px 0 var(--accent); }
 .work-thumb.soon {
   background: transparent; border: 2px dashed var(--line);
@@ -419,10 +420,14 @@ a.work-item:hover .work-thumb { transform: translate(-3px, -3px); box-shadow: 6p
           <p data-i18n="w2.desc">A one-page website for a small business. Coming soon.</p>
         </div>
         <div class="work-item">
-          <div class="work-thumb soon" data-i18n="w.soon">In production</div>
+          <div class="work-thumb">
+            <video controls preload="none" playsinline poster="/media/joyca-montage-poster.jpg" aria-label="YouTube montage video" data-i18n-aria="w3.video">
+              <source src="/media/joyca-montage.mp4" type="video/mp4">
+            </video>
+          </div>
           <p class="tag" data-i18n="w3.tag">Video</p>
-          <h3 data-i18n="w3.title">Short-form edit sample</h3>
-          <p data-i18n="w3.desc">A vertical edit with captions and music. Coming soon.</p>
+          <h3 data-i18n="w3.title">YouTube montage</h3>
+          <p data-i18n="w3.desc">An 8-minute YouTube edit cut from raw footage, with on-screen text and graphics.</p>
         </div>
       </div>
     </div>
@@ -539,8 +544,9 @@ a.work-item:hover .work-thumb { transform: translate(-3px, -3px); box-shadow: 6p
     "w2.title": "Landing page sample",
     "w2.desc": "A one-page website for a small business. Coming soon.",
     "w3.tag": "Video",
-    "w3.title": "Short-form edit sample",
-    "w3.desc": "A vertical edit with captions and music. Coming soon.",
+    "w3.title": "YouTube montage",
+    "w3.desc": "An 8-minute YouTube edit cut from raw footage, with on-screen text and graphics.",
+    "w3.video": "YouTube montage video",
     "process.eyebrow": "Process",
     "process.title": "How a project works",
     "p1.t": "Tell me your idea",
@@ -614,8 +620,9 @@ a.work-item:hover .work-thumb { transform: translate(-3px, -3px); box-shadow: 6p
     "w2.title": "Exemple de landing page",
     "w2.desc": "Un site d'une page pour une petite entreprise. Bientôt disponible.",
     "w3.tag": "Vidéo",
-    "w3.title": "Exemple de montage court",
-    "w3.desc": "Un montage vertical avec sous-titres et musique. Bientôt disponible.",
+    "w3.title": "Montage YouTube",
+    "w3.desc": "Un montage YouTube de 8 minutes à partir de rushs, avec textes et animations à l'écran.",
+    "w3.video": "Vidéo du montage YouTube",
     "process.eyebrow": "Méthode",
     "process.title": "Comment se passe un projet",
     "p1.t": "Parlez-moi de votre idée",
@@ -689,8 +696,9 @@ a.work-item:hover .work-thumb { transform: translate(-3px, -3px); box-shadow: 6p
     "w2.title": "Exemplo de landing page",
     "w2.desc": "Um site de uma página para um pequeno negócio. Brevemente.",
     "w3.tag": "Vídeo",
-    "w3.title": "Exemplo de edição curta",
-    "w3.desc": "Uma edição vertical com legendas e música. Brevemente.",
+    "w3.title": "Montagem para YouTube",
+    "w3.desc": "Uma edição de 8 minutos para YouTube feita a partir de clips em bruto, com texto e grafismos no ecrã.",
+    "w3.video": "Vídeo da montagem para YouTube",
     "process.eyebrow": "Processo",
     "process.title": "Como funciona um projeto",
     "p1.t": "Conte-me a sua ideia",
